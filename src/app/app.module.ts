@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MainBarComponent } from './main-bar/main-bar.component';
 import { FooterComponent } from './footer/footer.component';
+import { MainLogoComponent } from './main-logo/main-logo.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainBarComponent,
-    FooterComponent
+    FooterComponent,
+    MainLogoComponent
   ],
   imports: [
     BrowserModule,
