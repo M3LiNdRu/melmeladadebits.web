@@ -7,7 +7,7 @@ jobs:
       matrix:
         node-version: [14.x]
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
       - name: Cache node_modules
         uses: actions/cache@v1
         with:
@@ -23,8 +23,3 @@ jobs:
         run: |
           npm i
           npm run build
-      - name: Push Build to Releases
-        uses: ncipollo/release-action@v1
-        with:
-          artifacts: "dist/mdb/*"
-          token: ${{ secrets.GH_TOKEN }}
